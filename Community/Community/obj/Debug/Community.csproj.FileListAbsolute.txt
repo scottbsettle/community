@@ -1,1 +1,2 @@
 c:\users\god\documents\visual studio 2015\Projects\Community\Community\bin\Debug\Community.exe.config
+C:\Users\God\Desktop\community\Community\Community\bin\Debug\Community.exe.config
