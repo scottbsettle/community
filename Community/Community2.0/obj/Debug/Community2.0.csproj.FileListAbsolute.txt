@@ -1,0 +1,12 @@
+C:\Users\God\documents\visual studio 2015\Projects\Community2.0\Community2.0\bin\Debug\Community2.0.exe.config
+C:\Users\God\documents\visual studio 2015\Projects\Community2.0\Community2.0\bin\Debug\Community2.0.exe
+C:\Users\God\documents\visual studio 2015\Projects\Community2.0\Community2.0\bin\Debug\Community2.0.pdb
+C:\Users\God\documents\visual studio 2015\Projects\Community2.0\Community2.0\obj\Debug\Community2._0.HomePage.resources
+C:\Users\God\documents\visual studio 2015\Projects\Community2.0\Community2.0\obj\Debug\Community2._0.Login.resources
+C:\Users\God\documents\visual studio 2015\Projects\Community2.0\Community2.0\obj\Debug\Community2._0.Postings.resources
+C:\Users\God\documents\visual studio 2015\Projects\Community2.0\Community2.0\obj\Debug\Community2._0.Properties.Resources.resources
+C:\Users\God\documents\visual studio 2015\Projects\Community2.0\Community2.0\obj\Debug\Community2.0.csproj.GenerateResource.Cache
+C:\Users\God\documents\visual studio 2015\Projects\Community2.0\Community2.0\obj\Debug\Community2.0.exe
+C:\Users\God\documents\visual studio 2015\Projects\Community2.0\Community2.0\obj\Debug\Community2.0.pdb
+C:\Users\God\documents\visual studio 2015\Projects\Community2.0\Community2.0\obj\Debug\Community2.0.csprojResolveAssemblyReference.cache
+C:\Users\God\documents\visual studio 2015\Projects\Community2.0\Community2.0\obj\Debug\Community2._0.HomePanel.resources
