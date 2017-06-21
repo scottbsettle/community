@@ -35,8 +35,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.DiscriptionText = new System.Windows.Forms.TextBox();
             this.DeleteButton = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.NonLanel = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -114,15 +114,6 @@
             this.DeleteButton.Text = "Delete";
             this.DeleteButton.UseVisualStyleBackColor = true;
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panel1.Controls.Add(this.NonLanel);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(289, 129);
-            this.panel1.TabIndex = 7;
-            // 
             // NonLanel
             // 
             this.NonLanel.AutoSize = true;
@@ -132,6 +123,15 @@
             this.NonLanel.Size = new System.Drawing.Size(230, 49);
             this.NonLanel.TabIndex = 0;
             this.NonLanel.Text = "No Postings";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel1.Controls.Add(this.NonLanel);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(289, 129);
+            this.panel1.TabIndex = 7;
             // 
             // Postings
             // 
@@ -165,7 +165,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox DiscriptionText;
         private System.Windows.Forms.Button DeleteButton;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label NonLanel;
+        private System.Windows.Forms.Panel panel1;
     }
 }
