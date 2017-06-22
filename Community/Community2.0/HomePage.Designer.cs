@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.TopMenuPanel = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.MinButton = new System.Windows.Forms.Button();
             this.MaxButton = new System.Windows.Forms.Button();
             this.ExitButton = new System.Windows.Forms.Button();
             this.SettingsPanel = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.HelpButton = new System.Windows.Forms.Button();
             this.SettingsButton = new System.Windows.Forms.Button();
+            this.ProfileButton = new System.Windows.Forms.Button();
             this.PostButton = new System.Windows.Forms.Button();
             this.SearchButton = new System.Windows.Forms.Button();
             this.HomeButton = new System.Windows.Forms.Button();
@@ -44,31 +44,47 @@
             this.HomePanel = new System.Windows.Forms.Panel();
             this.PagePanel = new System.Windows.Forms.Panel();
             this.IconPanel = new System.Windows.Forms.Panel();
-            this.slideButtonIcon = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
+            this.SettingsIcon = new System.Windows.Forms.Button();
+            this.ProfileIcon = new System.Windows.Forms.Button();
+            this.PostIcon = new System.Windows.Forms.Button();
+            this.SearchIcon = new System.Windows.Forms.Button();
+            this.HomeIcon = new System.Windows.Forms.Button();
+            this.slideButtonIcon = new System.Windows.Forms.Button();
+            this.TopMenuPanel.SuspendLayout();
             this.SettingsPanel.SuspendLayout();
             this.panel3.SuspendLayout();
             this.HomePanel.SuspendLayout();
             this.IconPanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // TopMenuPanel
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panel1.Controls.Add(this.MinButton);
-            this.panel1.Controls.Add(this.MaxButton);
-            this.panel1.Controls.Add(this.ExitButton);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(772, 35);
-            this.panel1.TabIndex = 1;
+            this.TopMenuPanel.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.TopMenuPanel.Controls.Add(this.label1);
+            this.TopMenuPanel.Controls.Add(this.MinButton);
+            this.TopMenuPanel.Controls.Add(this.MaxButton);
+            this.TopMenuPanel.Controls.Add(this.ExitButton);
+            this.TopMenuPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TopMenuPanel.Location = new System.Drawing.Point(0, 0);
+            this.TopMenuPanel.Name = "TopMenuPanel";
+            this.TopMenuPanel.Size = new System.Drawing.Size(772, 35);
+            this.TopMenuPanel.TabIndex = 1;
+            this.TopMenuPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TopMenuPanel_MouseDown);
+            this.TopMenuPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.TopMenuPanel_MouseMove);
+            this.TopMenuPanel.MouseUp += new System.Windows.Forms.MouseEventHandler(this.TopMenuPanel_MouseUp);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Padding = new System.Windows.Forms.Padding(0, 7, 0, 0);
+            this.label1.Size = new System.Drawing.Size(111, 23);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "No logs, No limits";
             // 
             // MinButton
             // 
@@ -113,9 +129,8 @@
             // SettingsPanel
             // 
             this.SettingsPanel.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.SettingsPanel.Controls.Add(this.label1);
-            this.SettingsPanel.Controls.Add(this.HelpButton);
             this.SettingsPanel.Controls.Add(this.SettingsButton);
+            this.SettingsPanel.Controls.Add(this.ProfileButton);
             this.SettingsPanel.Controls.Add(this.PostButton);
             this.SettingsPanel.Controls.Add(this.SearchButton);
             this.SettingsPanel.Controls.Add(this.HomeButton);
@@ -126,33 +141,6 @@
             this.SettingsPanel.Size = new System.Drawing.Size(200, 452);
             this.SettingsPanel.TabIndex = 2;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 46F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label1.Location = new System.Drawing.Point(0, 305);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(213, 142);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Comm\r\nunity";
-            // 
-            // HelpButton
-            // 
-            this.HelpButton.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.HelpButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.HelpButton.FlatAppearance.BorderSize = 0;
-            this.HelpButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.HelpButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.HelpButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HelpButton.Location = new System.Drawing.Point(0, 249);
-            this.HelpButton.Name = "HelpButton";
-            this.HelpButton.Size = new System.Drawing.Size(200, 56);
-            this.HelpButton.TabIndex = 4;
-            this.HelpButton.Text = "Help";
-            this.HelpButton.UseVisualStyleBackColor = false;
-            // 
             // SettingsButton
             // 
             this.SettingsButton.BackColor = System.Drawing.SystemColors.ControlLight;
@@ -161,12 +149,27 @@
             this.SettingsButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.SettingsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SettingsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SettingsButton.Location = new System.Drawing.Point(0, 193);
+            this.SettingsButton.Location = new System.Drawing.Point(0, 249);
             this.SettingsButton.Name = "SettingsButton";
             this.SettingsButton.Size = new System.Drawing.Size(200, 56);
-            this.SettingsButton.TabIndex = 3;
-            this.SettingsButton.Text = "Setting";
+            this.SettingsButton.TabIndex = 4;
+            this.SettingsButton.Text = "Settings";
             this.SettingsButton.UseVisualStyleBackColor = false;
+            // 
+            // ProfileButton
+            // 
+            this.ProfileButton.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.ProfileButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ProfileButton.FlatAppearance.BorderSize = 0;
+            this.ProfileButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.ProfileButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ProfileButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProfileButton.Location = new System.Drawing.Point(0, 193);
+            this.ProfileButton.Name = "ProfileButton";
+            this.ProfileButton.Size = new System.Drawing.Size(200, 56);
+            this.ProfileButton.TabIndex = 3;
+            this.ProfileButton.Text = "Profile";
+            this.ProfileButton.UseVisualStyleBackColor = false;
             // 
             // PostButton
             // 
@@ -182,6 +185,7 @@
             this.PostButton.TabIndex = 2;
             this.PostButton.Text = "Post";
             this.PostButton.UseVisualStyleBackColor = false;
+            this.PostButton.Click += new System.EventHandler(this.PostButton_Click);
             // 
             // SearchButton
             // 
@@ -259,11 +263,11 @@
             // 
             this.IconPanel.BackColor = System.Drawing.SystemColors.ControlLight;
             this.IconPanel.Controls.Add(this.label2);
-            this.IconPanel.Controls.Add(this.button6);
-            this.IconPanel.Controls.Add(this.button5);
-            this.IconPanel.Controls.Add(this.button4);
-            this.IconPanel.Controls.Add(this.button3);
-            this.IconPanel.Controls.Add(this.button2);
+            this.IconPanel.Controls.Add(this.SettingsIcon);
+            this.IconPanel.Controls.Add(this.ProfileIcon);
+            this.IconPanel.Controls.Add(this.PostIcon);
+            this.IconPanel.Controls.Add(this.SearchIcon);
+            this.IconPanel.Controls.Add(this.HomeIcon);
             this.IconPanel.Controls.Add(this.slideButtonIcon);
             this.IconPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.IconPanel.Location = new System.Drawing.Point(0, 0);
@@ -272,6 +276,80 @@
             this.IconPanel.TabIndex = 0;
             this.IconPanel.Visible = false;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label2.Location = new System.Drawing.Point(0, 300);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(15, 130);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "C\r\no\r\nm\r\nm\r\n \r\nU\r\nn\r\ni\r\nt\r\ny";
+            // 
+            // SettingsIcon
+            // 
+            this.SettingsIcon.Dock = System.Windows.Forms.DockStyle.Top;
+            this.SettingsIcon.FlatAppearance.BorderSize = 0;
+            this.SettingsIcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SettingsIcon.Location = new System.Drawing.Point(0, 245);
+            this.SettingsIcon.Name = "SettingsIcon";
+            this.SettingsIcon.Size = new System.Drawing.Size(47, 55);
+            this.SettingsIcon.TabIndex = 5;
+            this.SettingsIcon.Text = "Settings";
+            this.SettingsIcon.UseVisualStyleBackColor = true;
+            // 
+            // ProfileIcon
+            // 
+            this.ProfileIcon.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ProfileIcon.FlatAppearance.BorderSize = 0;
+            this.ProfileIcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ProfileIcon.Location = new System.Drawing.Point(0, 190);
+            this.ProfileIcon.Name = "ProfileIcon";
+            this.ProfileIcon.Size = new System.Drawing.Size(47, 55);
+            this.ProfileIcon.TabIndex = 4;
+            this.ProfileIcon.Text = "Profile";
+            this.ProfileIcon.UseVisualStyleBackColor = true;
+            // 
+            // PostIcon
+            // 
+            this.PostIcon.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PostIcon.FlatAppearance.BorderSize = 0;
+            this.PostIcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PostIcon.Location = new System.Drawing.Point(0, 135);
+            this.PostIcon.Name = "PostIcon";
+            this.PostIcon.Size = new System.Drawing.Size(47, 55);
+            this.PostIcon.TabIndex = 3;
+            this.PostIcon.Text = "Post";
+            this.PostIcon.UseVisualStyleBackColor = true;
+            this.PostIcon.Click += new System.EventHandler(this.PostButton_Click);
+            // 
+            // SearchIcon
+            // 
+            this.SearchIcon.Dock = System.Windows.Forms.DockStyle.Top;
+            this.SearchIcon.FlatAppearance.BorderSize = 0;
+            this.SearchIcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SearchIcon.Location = new System.Drawing.Point(0, 80);
+            this.SearchIcon.Name = "SearchIcon";
+            this.SearchIcon.Size = new System.Drawing.Size(47, 55);
+            this.SearchIcon.TabIndex = 2;
+            this.SearchIcon.Text = "Search";
+            this.SearchIcon.UseVisualStyleBackColor = true;
+            this.SearchIcon.Click += new System.EventHandler(this.SearchButton_Click);
+            // 
+            // HomeIcon
+            // 
+            this.HomeIcon.Dock = System.Windows.Forms.DockStyle.Top;
+            this.HomeIcon.FlatAppearance.BorderSize = 0;
+            this.HomeIcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.HomeIcon.Location = new System.Drawing.Point(0, 25);
+            this.HomeIcon.Name = "HomeIcon";
+            this.HomeIcon.Size = new System.Drawing.Size(47, 55);
+            this.HomeIcon.TabIndex = 1;
+            this.HomeIcon.Text = "Home";
+            this.HomeIcon.UseVisualStyleBackColor = true;
+            this.HomeIcon.Click += new System.EventHandler(this.HomeButton_Click);
+            // 
             // slideButtonIcon
             // 
             this.slideButtonIcon.Dock = System.Windows.Forms.DockStyle.Top;
@@ -279,84 +357,11 @@
             this.slideButtonIcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.slideButtonIcon.Location = new System.Drawing.Point(0, 0);
             this.slideButtonIcon.Name = "slideButtonIcon";
-            this.slideButtonIcon.Size = new System.Drawing.Size(47, 37);
+            this.slideButtonIcon.Size = new System.Drawing.Size(47, 25);
             this.slideButtonIcon.TabIndex = 0;
             this.slideButtonIcon.Text = "-->";
             this.slideButtonIcon.UseVisualStyleBackColor = true;
             this.slideButtonIcon.Click += new System.EventHandler(this.slideButtonIcon_Click);
-            // 
-            // button2
-            // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(0, 37);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(47, 55);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Home";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.HomeButton_Click);
-            // 
-            // button3
-            // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(0, 92);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(47, 55);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Search";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.SearchButton_Click);
-            // 
-            // button4
-            // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(0, 147);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(47, 55);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Post";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(0, 202);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(47, 55);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Settings";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Location = new System.Drawing.Point(0, 257);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(47, 55);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "Help";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label2.Location = new System.Drawing.Point(0, 312);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(15, 130);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "C\r\no\r\nm\r\nm\r\n\r\nU\r\nn\r\ni\r\nt\r\ny";
             // 
             // HomePage
             // 
@@ -365,13 +370,13 @@
             this.ClientSize = new System.Drawing.Size(772, 487);
             this.Controls.Add(this.HomePanel);
             this.Controls.Add(this.SettingsPanel);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.TopMenuPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "HomePage";
             this.Text = "HomePage";
-            this.panel1.ResumeLayout(false);
+            this.TopMenuPanel.ResumeLayout(false);
+            this.TopMenuPanel.PerformLayout();
             this.SettingsPanel.ResumeLayout(false);
-            this.SettingsPanel.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.HomePanel.ResumeLayout(false);
             this.IconPanel.ResumeLayout(false);
@@ -382,15 +387,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel TopMenuPanel;
         private System.Windows.Forms.Button MinButton;
         private System.Windows.Forms.Button MaxButton;
         private System.Windows.Forms.Button ExitButton;
         private System.Windows.Forms.Panel SettingsPanel;
-        private System.Windows.Forms.Button HelpButton;
         private System.Windows.Forms.Button SettingsButton;
+        private System.Windows.Forms.Button ProfileButton;
         private System.Windows.Forms.Button HomeButton;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel HomePanel;
         private System.Windows.Forms.Button PostButton;
         private System.Windows.Forms.Button SearchButton;
@@ -398,12 +402,13 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button SlideButton;
         internal System.Windows.Forms.Panel IconPanel;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button SettingsIcon;
+        private System.Windows.Forms.Button ProfileIcon;
+        private System.Windows.Forms.Button PostIcon;
+        private System.Windows.Forms.Button SearchIcon;
+        private System.Windows.Forms.Button HomeIcon;
         private System.Windows.Forms.Button slideButtonIcon;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }

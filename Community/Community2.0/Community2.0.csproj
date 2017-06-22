@@ -72,6 +72,12 @@
     <Compile Include="Posting.Designer.cs">
       <DependentUpon>Posting.cs</DependentUpon>
     </Compile>
+    <Compile Include="PostingPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PostingPanel.Designer.cs">
+      <DependentUpon>PostingPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ResultPanel.cs">
@@ -97,6 +103,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Posting.resx">
       <DependentUpon>Posting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PostingPanel.resx">
+      <DependentUpon>PostingPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -127,9 +136,17 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Community.jpg" />
+  </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\Image0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CommunityLogo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

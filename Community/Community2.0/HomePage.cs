@@ -15,11 +15,15 @@ namespace Community2._0
 
         private HomePanel m_home = new HomePanel();
         private SearchPanel m_Search = new SearchPanel();
+        private PostingPanel m_Post = new PostingPanel();
+        private Point offset = new Point();
+        private bool MouseDown = false;
         public HomePage()
         {
             InitializeComponent();
             m_home.Dock = DockStyle.Fill;
             m_Search.Dock = DockStyle.Fill;
+            m_Post.Dock = DockStyle.Fill;
             PagePanel.Controls.Add(m_home);
         }
 
@@ -52,6 +56,37 @@ namespace Community2._0
         {
             PagePanel.Controls.Clear();
             PagePanel.Controls.Add(m_home);
+        }
+
+        private void PostButton_Click(object sender, EventArgs e)
+        {
+            SettingsPanel.Visible = false;
+            IconPanel.Visible = true;
+            PagePanel.Controls.Clear();
+            PagePanel.Controls.Add(m_Post);
+        }
+
+        private void TopMenuPanel_MouseDown(object sender, MouseEventArgs e)
+        {
+            MouseDown = true;
+            offset.X = MousePosition.X - Location.X;
+            offset.Y = MousePosition.Y - Location.Y;
+        }
+
+        private void TopMenuPanel_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (MouseDown)
+            {
+                Point temp = new Point();
+                temp.X = MousePosition.X - offset.X;
+                temp.Y = MousePosition.Y - offset.Y;
+                Location = temp;
+            }
+        }
+
+        private void TopMenuPanel_MouseUp(object sender, MouseEventArgs e)
+        {
+            MouseDown = false;
         }
     }
 }

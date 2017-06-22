@@ -38,8 +38,8 @@
             this.LoginButton = new System.Windows.Forms.Button();
             this.PasswordTextBox = new System.Windows.Forms.TextBox();
             this.UsernameTextBox = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.PasswordTxt = new System.Windows.Forms.Label();
+            this.UsernameTxt = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.panel1.SuspendLayout();
@@ -105,8 +105,8 @@
             this.panel2.Controls.Add(this.LoginButton);
             this.panel2.Controls.Add(this.PasswordTextBox);
             this.panel2.Controls.Add(this.UsernameTextBox);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.PasswordTxt);
+            this.panel2.Controls.Add(this.UsernameTxt);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 35);
             this.panel2.Name = "panel2";
@@ -155,25 +155,25 @@
             this.UsernameTextBox.Size = new System.Drawing.Size(147, 19);
             this.UsernameTextBox.TabIndex = 3;
             // 
-            // label3
+            // PasswordTxt
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(31, 244);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(78, 20);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Password";
+            this.PasswordTxt.AutoSize = true;
+            this.PasswordTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PasswordTxt.Location = new System.Drawing.Point(31, 244);
+            this.PasswordTxt.Name = "PasswordTxt";
+            this.PasswordTxt.Size = new System.Drawing.Size(78, 20);
+            this.PasswordTxt.TabIndex = 2;
+            this.PasswordTxt.Text = "Password";
             // 
-            // label2
+            // UsernameTxt
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(31, 166);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Username";
+            this.UsernameTxt.AutoSize = true;
+            this.UsernameTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UsernameTxt.Location = new System.Drawing.Point(31, 166);
+            this.UsernameTxt.Name = "UsernameTxt";
+            this.UsernameTxt.Size = new System.Drawing.Size(83, 20);
+            this.UsernameTxt.TabIndex = 1;
+            this.UsernameTxt.Text = "Username";
             // 
             // pictureBox1
             // 
@@ -221,8 +221,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox PasswordTextBox;
         private System.Windows.Forms.TextBox UsernameTextBox;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label PasswordTxt;
+        private System.Windows.Forms.Label UsernameTxt;
         private System.Windows.Forms.Button MinButton;
         private System.Windows.Forms.Button MaxButton;
         private System.Windows.Forms.Button ExitButton;

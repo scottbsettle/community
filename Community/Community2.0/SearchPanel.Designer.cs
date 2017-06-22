@@ -88,8 +88,8 @@
             // 
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.panel3);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel2.Location = new System.Drawing.Point(441, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(131, 452);
             this.panel2.TabIndex = 3;
@@ -214,6 +214,7 @@
             // 
             // panel5
             // 
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.vScrollBar1);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(0, 217);
@@ -224,9 +225,9 @@
             // vScrollBar1
             // 
             this.vScrollBar1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.vScrollBar1.Location = new System.Drawing.Point(114, 0);
+            this.vScrollBar1.Location = new System.Drawing.Point(112, 0);
             this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(17, 210);
+            this.vScrollBar1.Size = new System.Drawing.Size(17, 208);
             this.vScrollBar1.TabIndex = 0;
             // 
             // panel6
@@ -234,7 +235,7 @@
             this.panel6.Controls.Add(this.SearchTextBox);
             this.panel6.Controls.Add(this.panel7);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(131, 0);
+            this.panel6.Location = new System.Drawing.Point(0, 0);
             this.panel6.Name = "panel6";
             this.panel6.Padding = new System.Windows.Forms.Padding(100, 175, 100, 100);
             this.panel6.Size = new System.Drawing.Size(441, 452);
