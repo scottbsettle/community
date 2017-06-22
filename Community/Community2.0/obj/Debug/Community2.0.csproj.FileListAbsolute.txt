@@ -17,8 +17,10 @@ C:\Users\God\Desktop\community\Community\Community2.0\obj\Debug\Community2.0.csp
 C:\Users\God\Desktop\community\Community\Community2.0\obj\Debug\Community2._0.HomePage.resources
 C:\Users\God\Desktop\community\Community\Community2.0\obj\Debug\Community2._0.HomePanel.resources
 C:\Users\God\Desktop\community\Community\Community2.0\obj\Debug\Community2._0.Login.resources
-C:\Users\God\Desktop\community\Community\Community2.0\obj\Debug\Community2._0.Postings.resources
 C:\Users\God\Desktop\community\Community\Community2.0\obj\Debug\Community2._0.Properties.Resources.resources
 C:\Users\God\Desktop\community\Community\Community2.0\obj\Debug\Community2.0.csproj.GenerateResource.Cache
 C:\Users\God\Desktop\community\Community\Community2.0\bin\Debug\Community2.0.exe
 C:\Users\God\Desktop\community\Community\Community2.0\bin\Debug\Community2.0.pdb
+C:\Users\God\Desktop\community\Community\Community2.0\obj\Debug\Community2._0.Posting.resources
+C:\Users\God\Desktop\community\Community\Community2.0\obj\Debug\Community2._0.ResultPanel.resources
+C:\Users\God\Desktop\community\Community\Community2.0\obj\Debug\Community2._0.SearchPanel.resources

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Community2._0
 {
-    public partial class Postings : UserControl
+    public partial class ResultPanel : UserControl
     {
-        public Postings()
+        public ResultPanel()
         {
             InitializeComponent();
         }

@@ -36,11 +36,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.HelpButton = new System.Windows.Forms.Button();
             this.SettingsButton = new System.Windows.Forms.Button();
+            this.PostButton = new System.Windows.Forms.Button();
+            this.SearchButton = new System.Windows.Forms.Button();
             this.HomeButton = new System.Windows.Forms.Button();
             this.HomePanel = new System.Windows.Forms.Panel();
             this.homePanel1 = new Community2._0.HomePanel();
-            this.SearchButton = new System.Windows.Forms.Button();
-            this.PostButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.HomePanel.SuspendLayout();
@@ -154,6 +154,36 @@
             this.SettingsButton.Text = "Setting";
             this.SettingsButton.UseVisualStyleBackColor = false;
             // 
+            // PostButton
+            // 
+            this.PostButton.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.PostButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PostButton.FlatAppearance.BorderSize = 0;
+            this.PostButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.PostButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PostButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PostButton.Location = new System.Drawing.Point(0, 112);
+            this.PostButton.Name = "PostButton";
+            this.PostButton.Size = new System.Drawing.Size(200, 56);
+            this.PostButton.TabIndex = 2;
+            this.PostButton.Text = "Post";
+            this.PostButton.UseVisualStyleBackColor = false;
+            // 
+            // SearchButton
+            // 
+            this.SearchButton.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.SearchButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.SearchButton.FlatAppearance.BorderSize = 0;
+            this.SearchButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.SearchButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SearchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SearchButton.Location = new System.Drawing.Point(0, 56);
+            this.SearchButton.Name = "SearchButton";
+            this.SearchButton.Size = new System.Drawing.Size(200, 56);
+            this.SearchButton.TabIndex = 1;
+            this.SearchButton.Text = "Search";
+            this.SearchButton.UseVisualStyleBackColor = false;
+            // 
             // HomeButton
             // 
             this.HomeButton.BackColor = System.Drawing.SystemColors.ControlLight;
@@ -185,36 +215,6 @@
             this.homePanel1.Name = "homePanel1";
             this.homePanel1.Size = new System.Drawing.Size(572, 452);
             this.homePanel1.TabIndex = 0;
-            // 
-            // SearchButton
-            // 
-            this.SearchButton.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.SearchButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.SearchButton.FlatAppearance.BorderSize = 0;
-            this.SearchButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.SearchButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SearchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SearchButton.Location = new System.Drawing.Point(0, 56);
-            this.SearchButton.Name = "SearchButton";
-            this.SearchButton.Size = new System.Drawing.Size(200, 56);
-            this.SearchButton.TabIndex = 1;
-            this.SearchButton.Text = "Search";
-            this.SearchButton.UseVisualStyleBackColor = false;
-            // 
-            // PostButton
-            // 
-            this.PostButton.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.PostButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PostButton.FlatAppearance.BorderSize = 0;
-            this.PostButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.PostButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.PostButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PostButton.Location = new System.Drawing.Point(0, 112);
-            this.PostButton.Name = "PostButton";
-            this.PostButton.Size = new System.Drawing.Size(200, 56);
-            this.PostButton.TabIndex = 2;
-            this.PostButton.Text = "Post";
-            this.PostButton.UseVisualStyleBackColor = false;
             // 
             // HomePage
             // 
