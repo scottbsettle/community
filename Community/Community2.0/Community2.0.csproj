@@ -54,10 +54,10 @@
     <Compile Include="HomePage.Designer.cs">
       <DependentUpon>HomePage.cs</DependentUpon>
     </Compile>
-    <Compile Include="HomePanel.cs">
+    <Compile Include="Panels\HomePanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="HomePanel.Designer.cs">
+    <Compile Include="Panels\HomePanel.Designer.cs">
       <DependentUpon>HomePanel.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
@@ -66,61 +66,97 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Panels\PostCatPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\PostCatPanel.Designer.cs">
+      <DependentUpon>PostCatPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PostCustPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\PostCustPanel.Designer.cs">
+      <DependentUpon>PostCustPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PostImgPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\PostImgPanel.Designer.cs">
+      <DependentUpon>PostImgPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Posting.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Posting.Designer.cs">
       <DependentUpon>Posting.cs</DependentUpon>
     </Compile>
-    <Compile Include="PostingPanel.cs">
+    <Compile Include="Panels\PostingPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="PostingPanel.Designer.cs">
+    <Compile Include="Panels\PostingPanel.Designer.cs">
       <DependentUpon>PostingPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PostPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\PostPanel.Designer.cs">
+      <DependentUpon>PostPanel.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ResultPanel.cs">
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\ResultPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ResultPanel.Designer.cs">
+    <Compile Include="Panels\ResultPanel.Designer.cs">
       <DependentUpon>ResultPanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="SearchPanel.cs">
+    <Compile Include="Panels\SearchPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="SearchPanel.Designer.cs">
+    <Compile Include="Panels\SearchPanel.Designer.cs">
       <DependentUpon>SearchPanel.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HomePanel.resx">
+    <EmbeddedResource Include="Panels\HomePanel.resx">
       <DependentUpon>HomePanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PostCatPanel.resx">
+      <DependentUpon>PostCatPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PostCustPanel.resx">
+      <DependentUpon>PostCustPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PostImgPanel.resx">
+      <DependentUpon>PostImgPanel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Posting.resx">
       <DependentUpon>Posting.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PostingPanel.resx">
+    <EmbeddedResource Include="Panels\PostingPanel.resx">
       <DependentUpon>PostingPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PostPanel.resx">
+      <DependentUpon>PostPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <EmbeddedResource Include="ResultPanel.resx">
+    <EmbeddedResource Include="Panels\ResultPanel.resx">
       <DependentUpon>ResultPanel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SearchPanel.resx">
+    <EmbeddedResource Include="Panels\SearchPanel.resx">
       <DependentUpon>SearchPanel.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -137,16 +173,25 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Community.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Resources\Image0.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\unnamed.jpg" />
+    <None Include="Resources\Community.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\CommunityLogo.png" />
+    <None Include="Resources\search-2-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8990-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jPj13Lo.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

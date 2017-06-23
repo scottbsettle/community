@@ -63,6 +63,16 @@ namespace Community2._0.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _8990_200 {
+            get {
+                object obj = ResourceManager.GetObject("8990-200", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Community {
             get {
                 object obj = ResourceManager.GetObject("Community", resourceCulture);
@@ -73,9 +83,9 @@ namespace Community2._0.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap CommunityLogo {
+        internal static System.Drawing.Bitmap home_128 {
             get {
-                object obj = ResourceManager.GetObject("CommunityLogo", resourceCulture);
+                object obj = ResourceManager.GetObject("home-128", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +103,29 @@ namespace Community2._0.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap unnamed {
+        internal static System.Drawing.Bitmap jPj13Lo {
             get {
-                object obj = ResourceManager.GetObject("unnamed", resourceCulture);
+                object obj = ResourceManager.GetObject("jPj13Lo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap search_2_xxl {
+            get {
+                object obj = ResourceManager.GetObject("search-2-xxl", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap settings_128 {
+            get {
+                object obj = ResourceManager.GetObject("settings-128", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

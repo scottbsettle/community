@@ -30,8 +30,9 @@
         {
             this.TabControler = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -45,33 +46,32 @@
             this.button4 = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.TitlePanel = new System.Windows.Forms.Panel();
-            this.DescriptionPanel = new System.Windows.Forms.Panel();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.CustomPanel = new System.Windows.Forms.Panel();
-            this.Titletxt = new System.Windows.Forms.Label();
-            this.DescriptionTxt = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.DatePanel = new System.Windows.Forms.Panel();
             this.DeleteDate = new System.Windows.Forms.DateTimePicker();
             this.DeleteTxt = new System.Windows.Forms.Label();
+            this.DescriptionPanel = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.DescriptionTxt = new System.Windows.Forms.Label();
+            this.TitlePanel = new System.Windows.Forms.Panel();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.Titletxt = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.TabControler.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.TitlePanel.SuspendLayout();
-            this.DescriptionPanel.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.CustomPanel.SuspendLayout();
             this.DatePanel.SuspendLayout();
+            this.DescriptionPanel.SuspendLayout();
+            this.TitlePanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // TabControler
@@ -96,31 +96,38 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(564, 412);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Categories";
+            this.tabPage1.Text = "Category";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // panel1
             // 
-            this.tabPage2.Controls.Add(this.CustomPanel);
-            this.tabPage2.Controls.Add(this.DescriptionPanel);
-            this.tabPage2.Controls.Add(this.TitlePanel);
-            this.tabPage2.Location = new System.Drawing.Point(4, 36);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(564, 412);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Customize";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Padding = new System.Windows.Forms.Padding(85, 20, 0, 0);
+            this.panel1.Size = new System.Drawing.Size(427, 56);
+            this.panel1.TabIndex = 6;
             // 
-            // tabPage3
+            // textBox1
             // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 36);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(564, 412);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Images";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            this.textBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.textBox1.Location = new System.Drawing.Point(210, 20);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(161, 20);
+            this.textBox1.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(85, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(125, 20);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Create Category";
             // 
             // panel3
             // 
@@ -168,7 +175,7 @@
             // 
             // button8
             // 
-            this.button8.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.button8.BackColor = System.Drawing.Color.Transparent;
             this.button8.Dock = System.Windows.Forms.DockStyle.Top;
             this.button8.FlatAppearance.BorderSize = 0;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -181,7 +188,7 @@
             // 
             // button7
             // 
-            this.button7.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.button7.BackColor = System.Drawing.Color.Transparent;
             this.button7.Dock = System.Windows.Forms.DockStyle.Top;
             this.button7.FlatAppearance.BorderSize = 0;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -194,7 +201,7 @@
             // 
             // button6
             // 
-            this.button6.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.button6.BackColor = System.Drawing.Color.Transparent;
             this.button6.Dock = System.Windows.Forms.DockStyle.Top;
             this.button6.FlatAppearance.BorderSize = 0;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -207,7 +214,7 @@
             // 
             // button5
             // 
-            this.button5.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.button5.BackColor = System.Drawing.Color.Transparent;
             this.button5.Dock = System.Windows.Forms.DockStyle.Top;
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -220,7 +227,7 @@
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.button3.BackColor = System.Drawing.Color.Transparent;
             this.button3.Dock = System.Windows.Forms.DockStyle.Top;
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -233,7 +240,7 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.button2.BackColor = System.Drawing.Color.Transparent;
             this.button2.Dock = System.Windows.Forms.DockStyle.Top;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -246,7 +253,7 @@
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.button4.BackColor = System.Drawing.Color.Transparent;
             this.button4.Dock = System.Windows.Forms.DockStyle.Top;
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -259,7 +266,7 @@
             // 
             // panel6
             // 
-            this.panel6.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel6.BackColor = System.Drawing.Color.Transparent;
             this.panel6.Controls.Add(this.label2);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel6.Location = new System.Drawing.Point(0, 0);
@@ -271,68 +278,26 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Name = "label2";
             this.label2.Padding = new System.Windows.Forms.Padding(20, 3, 0, 0);
-            this.label2.Size = new System.Drawing.Size(77, 16);
+            this.label2.Size = new System.Drawing.Size(102, 16);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Categories";
+            this.label2.Text = "Select Category";
             // 
-            // panel1
+            // tabPage2
             // 
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Padding = new System.Windows.Forms.Padding(85, 20, 0, 0);
-            this.panel1.Size = new System.Drawing.Size(427, 56);
-            this.panel1.TabIndex = 6;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.textBox1.Location = new System.Drawing.Point(215, 20);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(161, 20);
-            this.textBox1.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(85, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 20);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Create Categorie";
-            // 
-            // TitlePanel
-            // 
-            this.TitlePanel.Controls.Add(this.textBox3);
-            this.TitlePanel.Controls.Add(this.Titletxt);
-            this.TitlePanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.TitlePanel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TitlePanel.Location = new System.Drawing.Point(3, 3);
-            this.TitlePanel.Name = "TitlePanel";
-            this.TitlePanel.Padding = new System.Windows.Forms.Padding(50, 25, 0, 0);
-            this.TitlePanel.Size = new System.Drawing.Size(558, 63);
-            this.TitlePanel.TabIndex = 0;
-            // 
-            // DescriptionPanel
-            // 
-            this.DescriptionPanel.Controls.Add(this.label3);
-            this.DescriptionPanel.Controls.Add(this.textBox4);
-            this.DescriptionPanel.Controls.Add(this.textBox2);
-            this.DescriptionPanel.Controls.Add(this.DescriptionTxt);
-            this.DescriptionPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.DescriptionPanel.Location = new System.Drawing.Point(3, 66);
-            this.DescriptionPanel.Name = "DescriptionPanel";
-            this.DescriptionPanel.Padding = new System.Windows.Forms.Padding(20, 50, 10, 10);
-            this.DescriptionPanel.Size = new System.Drawing.Size(558, 135);
-            this.DescriptionPanel.TabIndex = 1;
+            this.tabPage2.Controls.Add(this.CustomPanel);
+            this.tabPage2.Controls.Add(this.DescriptionPanel);
+            this.tabPage2.Controls.Add(this.TitlePanel);
+            this.tabPage2.Location = new System.Drawing.Point(4, 36);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(564, 412);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Customize";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // CustomPanel
             // 
@@ -343,66 +308,6 @@
             this.CustomPanel.Name = "CustomPanel";
             this.CustomPanel.Size = new System.Drawing.Size(558, 208);
             this.CustomPanel.TabIndex = 2;
-            // 
-            // Titletxt
-            // 
-            this.Titletxt.AutoSize = true;
-            this.Titletxt.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Titletxt.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Titletxt.Location = new System.Drawing.Point(50, 25);
-            this.Titletxt.Name = "Titletxt";
-            this.Titletxt.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.Titletxt.Size = new System.Drawing.Size(34, 21);
-            this.Titletxt.TabIndex = 0;
-            this.Titletxt.Text = "Title";
-            // 
-            // DescriptionTxt
-            // 
-            this.DescriptionTxt.AutoSize = true;
-            this.DescriptionTxt.Dock = System.Windows.Forms.DockStyle.Left;
-            this.DescriptionTxt.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DescriptionTxt.Location = new System.Drawing.Point(20, 50);
-            this.DescriptionTxt.Name = "DescriptionTxt";
-            this.DescriptionTxt.Size = new System.Drawing.Size(78, 19);
-            this.DescriptionTxt.TabIndex = 0;
-            this.DescriptionTxt.Text = "Description";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.textBox2.Location = new System.Drawing.Point(98, 50);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(272, 75);
-            this.textBox2.TabIndex = 1;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.textBox3.Location = new System.Drawing.Point(84, 25);
-            this.textBox3.MaxLength = 255;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(272, 26);
-            this.textBox3.TabIndex = 1;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.textBox4.Location = new System.Drawing.Point(448, 50);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 2;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(386, 50);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 19);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Location";
             // 
             // DatePanel
             // 
@@ -435,31 +340,126 @@
             this.DeleteTxt.TabIndex = 1;
             this.DeleteTxt.Text = "Delete Date";
             // 
+            // DescriptionPanel
+            // 
+            this.DescriptionPanel.Controls.Add(this.label3);
+            this.DescriptionPanel.Controls.Add(this.textBox4);
+            this.DescriptionPanel.Controls.Add(this.textBox2);
+            this.DescriptionPanel.Controls.Add(this.DescriptionTxt);
+            this.DescriptionPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.DescriptionPanel.Location = new System.Drawing.Point(3, 66);
+            this.DescriptionPanel.Name = "DescriptionPanel";
+            this.DescriptionPanel.Padding = new System.Windows.Forms.Padding(20, 10, 10, 10);
+            this.DescriptionPanel.Size = new System.Drawing.Size(558, 135);
+            this.DescriptionPanel.TabIndex = 1;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(370, 10);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(62, 19);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Location";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.textBox4.Location = new System.Drawing.Point(432, 10);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(116, 20);
+            this.textBox4.TabIndex = 2;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.textBox2.Location = new System.Drawing.Point(98, 10);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(272, 115);
+            this.textBox2.TabIndex = 1;
+            // 
+            // DescriptionTxt
+            // 
+            this.DescriptionTxt.AutoSize = true;
+            this.DescriptionTxt.Dock = System.Windows.Forms.DockStyle.Left;
+            this.DescriptionTxt.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DescriptionTxt.Location = new System.Drawing.Point(20, 10);
+            this.DescriptionTxt.Name = "DescriptionTxt";
+            this.DescriptionTxt.Size = new System.Drawing.Size(78, 19);
+            this.DescriptionTxt.TabIndex = 0;
+            this.DescriptionTxt.Text = "Description";
+            // 
+            // TitlePanel
+            // 
+            this.TitlePanel.Controls.Add(this.textBox3);
+            this.TitlePanel.Controls.Add(this.Titletxt);
+            this.TitlePanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TitlePanel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TitlePanel.Location = new System.Drawing.Point(3, 3);
+            this.TitlePanel.Name = "TitlePanel";
+            this.TitlePanel.Padding = new System.Windows.Forms.Padding(60, 25, 0, 0);
+            this.TitlePanel.Size = new System.Drawing.Size(558, 63);
+            this.TitlePanel.TabIndex = 0;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.textBox3.Location = new System.Drawing.Point(94, 25);
+            this.textBox3.MaxLength = 255;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(272, 26);
+            this.textBox3.TabIndex = 1;
+            // 
+            // Titletxt
+            // 
+            this.Titletxt.AutoSize = true;
+            this.Titletxt.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Titletxt.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Titletxt.Location = new System.Drawing.Point(60, 25);
+            this.Titletxt.Name = "Titletxt";
+            this.Titletxt.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.Titletxt.Size = new System.Drawing.Size(34, 21);
+            this.Titletxt.TabIndex = 0;
+            this.Titletxt.Text = "Title";
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Location = new System.Drawing.Point(4, 36);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(564, 412);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Images";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
             // PostingPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.TabControler);
             this.Name = "PostingPanel";
             this.Size = new System.Drawing.Size(572, 452);
             this.TabControler.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.TitlePanel.ResumeLayout(false);
-            this.TitlePanel.PerformLayout();
-            this.DescriptionPanel.ResumeLayout(false);
-            this.DescriptionPanel.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
             this.CustomPanel.ResumeLayout(false);
             this.DatePanel.ResumeLayout(false);
             this.DatePanel.PerformLayout();
+            this.DescriptionPanel.ResumeLayout(false);
+            this.DescriptionPanel.PerformLayout();
+            this.TitlePanel.ResumeLayout(false);
+            this.TitlePanel.PerformLayout();
             this.ResumeLayout(false);
 
         }

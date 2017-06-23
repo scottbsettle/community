@@ -25,3 +25,7 @@ C:\Users\God\Desktop\community\Community\Community2.0\obj\Debug\Community2._0.Po
 C:\Users\God\Desktop\community\Community\Community2.0\obj\Debug\Community2._0.ResultPanel.resources
 C:\Users\God\Desktop\community\Community\Community2.0\obj\Debug\Community2._0.SearchPanel.resources
 C:\Users\God\Desktop\community\Community\Community2.0\obj\Debug\Community2._0.PostingPanel.resources
+C:\Users\God\Desktop\community\Community\Community2.0\obj\Debug\Community2._0.PostCatPanel.resources
+C:\Users\God\Desktop\community\Community\Community2.0\obj\Debug\Community2._0.PostCustPanel.resources
+C:\Users\God\Desktop\community\Community\Community2.0\obj\Debug\Community2._0.PostPanel.resources
+C:\Users\God\Desktop\community\Community\Community2.0\obj\Debug\Community2._0.PostImgPanel.resources
