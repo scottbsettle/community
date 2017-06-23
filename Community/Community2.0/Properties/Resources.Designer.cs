@@ -73,6 +73,36 @@ namespace Community2._0.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _20Top {
+            get {
+                object obj = ResourceManager.GetObject("20Top", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _30Top2 {
+            get {
+                object obj = ResourceManager.GetObject("30Top2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _40Top {
+            get {
+                object obj = ResourceManager.GetObject("40Top", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _65838_200 {
             get {
                 object obj = ResourceManager.GetObject("65838-200", resourceCulture);
@@ -126,6 +156,16 @@ namespace Community2._0.Properties {
         internal static System.Drawing.Bitmap home_128 {
             get {
                 object obj = ResourceManager.GetObject("home-128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap HomeButton20 {
+            get {
+                object obj = ResourceManager.GetObject("HomeButton20", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

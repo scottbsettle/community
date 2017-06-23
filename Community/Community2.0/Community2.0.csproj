@@ -54,10 +54,22 @@
     <Compile Include="HomePage.Designer.cs">
       <DependentUpon>HomePage.cs</DependentUpon>
     </Compile>
-    <Compile Include="NextBottomPanel.cs">
+    <Compile Include="Panels\MenueIconPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="NextBottomPanel.Designer.cs">
+    <Compile Include="Panels\MenueIconPanel.Designer.cs">
+      <DependentUpon>MenueIconPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\MenuePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\MenuePanel.Designer.cs">
+      <DependentUpon>MenuePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\NextBottomPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\NextBottomPanel.Designer.cs">
       <DependentUpon>NextBottomPanel.cs</DependentUpon>
     </Compile>
     <Compile Include="Panels\HomePanel.cs">
@@ -130,7 +142,13 @@
     <EmbeddedResource Include="HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NextBottomPanel.resx">
+    <EmbeddedResource Include="Panels\MenueIconPanel.resx">
+      <DependentUpon>MenueIconPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\MenuePanel.resx">
+      <DependentUpon>MenuePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\NextBottomPanel.resx">
       <DependentUpon>NextBottomPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Panels\HomePanel.resx">
@@ -222,6 +240,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ic_keyboard_arrow_right_48px-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20Top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\40Top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\30Top2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeButton20.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

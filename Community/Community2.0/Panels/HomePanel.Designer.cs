@@ -83,6 +83,7 @@
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Mistral", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Image = global::Community2._0.Properties.Resources.HomeButton20;
             this.label1.Location = new System.Drawing.Point(200, 0);
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
@@ -106,11 +107,11 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::Community2._0.Properties.Resources.ButtonTest;
+            this.pictureBox1.BackgroundImage = global::Community2._0.Properties.Resources.HomeButton20;
             this.pictureBox1.Image = global::Community2._0.Properties.Resources._149452;
             this.pictureBox1.Location = new System.Drawing.Point(83, 23);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(196, 127);
+            this.pictureBox1.Size = new System.Drawing.Size(139, 127);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -118,11 +119,11 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImage = global::Community2._0.Properties.Resources.ButtonTest;
+            this.pictureBox2.BackgroundImage = global::Community2._0.Properties.Resources.HomeButton20;
             this.pictureBox2.Image = global::Community2._0.Properties.Resources._8990_200;
-            this.pictureBox2.Location = new System.Drawing.Point(285, 23);
+            this.pictureBox2.Location = new System.Drawing.Point(228, 23);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(196, 127);
+            this.pictureBox2.Size = new System.Drawing.Size(139, 127);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
@@ -130,11 +131,11 @@
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.BackgroundImage = global::Community2._0.Properties.Resources.ButtonTest;
+            this.pictureBox3.BackgroundImage = global::Community2._0.Properties.Resources.HomeButton20;
             this.pictureBox3.Image = global::Community2._0.Properties.Resources.search_2_xxl;
-            this.pictureBox3.Location = new System.Drawing.Point(83, 156);
+            this.pictureBox3.Location = new System.Drawing.Point(373, 23);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(196, 127);
+            this.pictureBox3.Size = new System.Drawing.Size(139, 127);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
@@ -142,11 +143,11 @@
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.BackgroundImage = global::Community2._0.Properties.Resources.ButtonTest;
+            this.pictureBox4.BackgroundImage = global::Community2._0.Properties.Resources.HomeButton20;
             this.pictureBox4.Image = global::Community2._0.Properties.Resources.settings_128;
-            this.pictureBox4.Location = new System.Drawing.Point(285, 156);
+            this.pictureBox4.Location = new System.Drawing.Point(83, 156);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(196, 127);
+            this.pictureBox4.Size = new System.Drawing.Size(139, 127);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 3;
             this.pictureBox4.TabStop = false;
