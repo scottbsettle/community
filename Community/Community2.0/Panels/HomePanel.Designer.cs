@@ -30,21 +30,21 @@
         {
             this.panel2 = new System.Windows.Forms.Panel();
             this.MainPanel = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.ProfileIcon = new System.Windows.Forms.PictureBox();
+            this.PostIcon = new System.Windows.Forms.PictureBox();
+            this.SearchIcon = new System.Windows.Forms.PictureBox();
+            this.SettingsIcon = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             this.MainPanel.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProfileIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PostIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SearchIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SettingsIcon)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -67,6 +67,75 @@
             this.MainPanel.Size = new System.Drawing.Size(572, 335);
             this.MainPanel.TabIndex = 2;
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.ProfileIcon);
+            this.flowLayoutPanel1.Controls.Add(this.PostIcon);
+            this.flowLayoutPanel1.Controls.Add(this.SearchIcon);
+            this.flowLayoutPanel1.Controls.Add(this.SettingsIcon);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(80, 20, 20, 20);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(572, 335);
+            this.flowLayoutPanel1.TabIndex = 0;
+            // 
+            // ProfileIcon
+            // 
+            this.ProfileIcon.BackColor = System.Drawing.Color.Transparent;
+            this.ProfileIcon.BackgroundImage = global::Community2._0.Properties.Resources.HomeButton20;
+            this.ProfileIcon.Image = global::Community2._0.Properties.Resources._149452;
+            this.ProfileIcon.Location = new System.Drawing.Point(83, 23);
+            this.ProfileIcon.Name = "ProfileIcon";
+            this.ProfileIcon.Size = new System.Drawing.Size(139, 127);
+            this.ProfileIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ProfileIcon.TabIndex = 0;
+            this.ProfileIcon.TabStop = false;
+            this.ProfileIcon.MouseEnter += new System.EventHandler(this.ProfileIcon_MouseEnter);
+            this.ProfileIcon.MouseLeave += new System.EventHandler(this.ProfileIcon_MouseLeave);
+            // 
+            // PostIcon
+            // 
+            this.PostIcon.BackColor = System.Drawing.Color.Transparent;
+            this.PostIcon.BackgroundImage = global::Community2._0.Properties.Resources.HomeButton20;
+            this.PostIcon.Image = global::Community2._0.Properties.Resources._8990_200;
+            this.PostIcon.Location = new System.Drawing.Point(228, 23);
+            this.PostIcon.Name = "PostIcon";
+            this.PostIcon.Size = new System.Drawing.Size(139, 127);
+            this.PostIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PostIcon.TabIndex = 1;
+            this.PostIcon.TabStop = false;
+            this.PostIcon.MouseEnter += new System.EventHandler(this.PostIcon_MouseEnter);
+            this.PostIcon.MouseLeave += new System.EventHandler(this.PostIcon_MouseLeave);
+            // 
+            // SearchIcon
+            // 
+            this.SearchIcon.BackColor = System.Drawing.Color.Transparent;
+            this.SearchIcon.BackgroundImage = global::Community2._0.Properties.Resources.HomeButton20;
+            this.SearchIcon.Image = global::Community2._0.Properties.Resources.search_2_xxl;
+            this.SearchIcon.Location = new System.Drawing.Point(373, 23);
+            this.SearchIcon.Name = "SearchIcon";
+            this.SearchIcon.Size = new System.Drawing.Size(139, 127);
+            this.SearchIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.SearchIcon.TabIndex = 2;
+            this.SearchIcon.TabStop = false;
+            this.SearchIcon.MouseEnter += new System.EventHandler(this.SearchIcon_MouseEnter);
+            this.SearchIcon.MouseLeave += new System.EventHandler(this.SearchIcon_MouseLeave);
+            // 
+            // SettingsIcon
+            // 
+            this.SettingsIcon.BackColor = System.Drawing.Color.Transparent;
+            this.SettingsIcon.BackgroundImage = global::Community2._0.Properties.Resources.HomeButton20;
+            this.SettingsIcon.Image = global::Community2._0.Properties.Resources.settings_128;
+            this.SettingsIcon.Location = new System.Drawing.Point(83, 156);
+            this.SettingsIcon.Name = "SettingsIcon";
+            this.SettingsIcon.Size = new System.Drawing.Size(139, 127);
+            this.SettingsIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.SettingsIcon.TabIndex = 3;
+            this.SettingsIcon.TabStop = false;
+            this.SettingsIcon.MouseEnter += new System.EventHandler(this.SettingsIcon_MouseEnter);
+            this.SettingsIcon.MouseLeave += new System.EventHandler(this.SettingsIcon_MouseLeave);
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
@@ -82,75 +151,14 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Mistral", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Mistral", 21.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Image = global::Community2._0.Properties.Resources.HomeButton20;
             this.label1.Location = new System.Drawing.Point(200, 0);
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.label1.Size = new System.Drawing.Size(237, 112);
+            this.label1.Size = new System.Drawing.Size(237, 78);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Welcome to Community\r\n                where \r\n         Security Matters";
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(this.pictureBox1);
-            this.flowLayoutPanel1.Controls.Add(this.pictureBox2);
-            this.flowLayoutPanel1.Controls.Add(this.pictureBox3);
-            this.flowLayoutPanel1.Controls.Add(this.pictureBox4);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(80, 20, 20, 20);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(572, 335);
-            this.flowLayoutPanel1.TabIndex = 0;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::Community2._0.Properties.Resources.HomeButton20;
-            this.pictureBox1.Image = global::Community2._0.Properties.Resources._149452;
-            this.pictureBox1.Location = new System.Drawing.Point(83, 23);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(139, 127);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImage = global::Community2._0.Properties.Resources.HomeButton20;
-            this.pictureBox2.Image = global::Community2._0.Properties.Resources._8990_200;
-            this.pictureBox2.Location = new System.Drawing.Point(228, 23);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(139, 127);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.BackgroundImage = global::Community2._0.Properties.Resources.HomeButton20;
-            this.pictureBox3.Image = global::Community2._0.Properties.Resources.search_2_xxl;
-            this.pictureBox3.Location = new System.Drawing.Point(373, 23);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(139, 127);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.BackgroundImage = global::Community2._0.Properties.Resources.HomeButton20;
-            this.pictureBox4.Image = global::Community2._0.Properties.Resources.settings_128;
-            this.pictureBox4.Location = new System.Drawing.Point(83, 156);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(139, 127);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 3;
-            this.pictureBox4.TabStop = false;
+            this.label1.Text = "\r\nWelcome to Community";
             // 
             // HomePanel
             // 
@@ -162,13 +170,13 @@
             this.Size = new System.Drawing.Size(572, 452);
             this.panel2.ResumeLayout(false);
             this.MainPanel.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ProfileIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PostIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SearchIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SettingsIcon)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.flowLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -179,9 +187,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel MainPanel;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox ProfileIcon;
+        private System.Windows.Forms.PictureBox PostIcon;
+        private System.Windows.Forms.PictureBox SearchIcon;
+        private System.Windows.Forms.PictureBox SettingsIcon;
     }
 }
