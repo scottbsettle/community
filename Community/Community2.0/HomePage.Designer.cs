@@ -42,7 +42,7 @@
             this.SearchButton = new System.Windows.Forms.Button();
             this.HomeButton = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.SlideButton = new System.Windows.Forms.Button();
+            this.SlideButton = new System.Windows.Forms.PictureBox();
             this.HomePanel = new System.Windows.Forms.Panel();
             this.PagePanel = new System.Windows.Forms.Panel();
             this.IconPanel = new System.Windows.Forms.Panel();
@@ -52,11 +52,12 @@
             this.PostIcon = new System.Windows.Forms.PictureBox();
             this.SearchIcon = new System.Windows.Forms.PictureBox();
             this.HomeIcon = new System.Windows.Forms.PictureBox();
-            this.slideButtonIcon = new System.Windows.Forms.Button();
+            this.SlideButtonIcon = new System.Windows.Forms.PictureBox();
             this.TopMenuPanel.SuspendLayout();
             this.SettingsPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SlideButton)).BeginInit();
             this.HomePanel.SuspendLayout();
             this.IconPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SettingsIcon)).BeginInit();
@@ -64,6 +65,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.PostIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SearchIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HomeIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SlideButtonIcon)).BeginInit();
             this.SuspendLayout();
             // 
             // TopMenuPanel
@@ -259,17 +261,16 @@
             // SlideButton
             // 
             this.SlideButton.Dock = System.Windows.Forms.DockStyle.Right;
-            this.SlideButton.FlatAppearance.BorderSize = 0;
-            this.SlideButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSteelBlue;
-            this.SlideButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue;
-            this.SlideButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SlideButton.Image = global::Community2._0.Properties.Resources.ic_keyboard_arrow_left_48px_128;
             this.SlideButton.Location = new System.Drawing.Point(162, 0);
             this.SlideButton.Name = "SlideButton";
             this.SlideButton.Size = new System.Drawing.Size(38, 25);
-            this.SlideButton.TabIndex = 0;
-            this.SlideButton.Text = "<--";
-            this.SlideButton.UseVisualStyleBackColor = true;
+            this.SlideButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.SlideButton.TabIndex = 1;
+            this.SlideButton.TabStop = false;
             this.SlideButton.Click += new System.EventHandler(this.SlideButton_Click);
+            this.SlideButton.MouseEnter += new System.EventHandler(this.SlideButton_MouseEnter);
+            this.SlideButton.MouseLeave += new System.EventHandler(this.SlideButton_MouseLeave);
             // 
             // HomePanel
             // 
@@ -299,7 +300,7 @@
             this.IconPanel.Controls.Add(this.PostIcon);
             this.IconPanel.Controls.Add(this.SearchIcon);
             this.IconPanel.Controls.Add(this.HomeIcon);
-            this.IconPanel.Controls.Add(this.slideButtonIcon);
+            this.IconPanel.Controls.Add(this.SlideButtonIcon);
             this.IconPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.IconPanel.Location = new System.Drawing.Point(0, 0);
             this.IconPanel.Name = "IconPanel";
@@ -328,6 +329,8 @@
             this.SettingsIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.SettingsIcon.TabIndex = 12;
             this.SettingsIcon.TabStop = false;
+            this.SettingsIcon.MouseEnter += new System.EventHandler(this.SettingsIcon_MouseEnter);
+            this.SettingsIcon.MouseLeave += new System.EventHandler(this.SettingsIcon_MouseLeave);
             // 
             // ProfileIcon
             // 
@@ -339,6 +342,8 @@
             this.ProfileIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ProfileIcon.TabIndex = 11;
             this.ProfileIcon.TabStop = false;
+            this.ProfileIcon.MouseEnter += new System.EventHandler(this.ProfileIcon_MouseEnter);
+            this.ProfileIcon.MouseLeave += new System.EventHandler(this.ProfileIcon_MouseLeave);
             // 
             // PostIcon
             // 
@@ -351,6 +356,8 @@
             this.PostIcon.TabIndex = 10;
             this.PostIcon.TabStop = false;
             this.PostIcon.Click += new System.EventHandler(this.PostButton_Click);
+            this.PostIcon.MouseEnter += new System.EventHandler(this.PostIcon_MouseEnter);
+            this.PostIcon.MouseLeave += new System.EventHandler(this.PostIcon_MouseLeave);
             // 
             // SearchIcon
             // 
@@ -363,6 +370,8 @@
             this.SearchIcon.TabIndex = 8;
             this.SearchIcon.TabStop = false;
             this.SearchIcon.Click += new System.EventHandler(this.SearchButton_Click);
+            this.SearchIcon.MouseEnter += new System.EventHandler(this.SearchIcon_MouseEnter);
+            this.SearchIcon.MouseLeave += new System.EventHandler(this.SearchIcon_MouseLeave);
             // 
             // HomeIcon
             // 
@@ -375,21 +384,22 @@
             this.HomeIcon.TabIndex = 7;
             this.HomeIcon.TabStop = false;
             this.HomeIcon.Click += new System.EventHandler(this.HomeButton_Click);
+            this.HomeIcon.MouseEnter += new System.EventHandler(this.HomeIcon_MouseEnter);
+            this.HomeIcon.MouseLeave += new System.EventHandler(this.HomeIcon_MouseLeave);
             // 
-            // slideButtonIcon
+            // SlideButtonIcon
             // 
-            this.slideButtonIcon.Dock = System.Windows.Forms.DockStyle.Top;
-            this.slideButtonIcon.FlatAppearance.BorderSize = 0;
-            this.slideButtonIcon.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSteelBlue;
-            this.slideButtonIcon.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue;
-            this.slideButtonIcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.slideButtonIcon.Location = new System.Drawing.Point(0, 0);
-            this.slideButtonIcon.Name = "slideButtonIcon";
-            this.slideButtonIcon.Size = new System.Drawing.Size(35, 25);
-            this.slideButtonIcon.TabIndex = 0;
-            this.slideButtonIcon.Text = "-->";
-            this.slideButtonIcon.UseVisualStyleBackColor = true;
-            this.slideButtonIcon.Click += new System.EventHandler(this.slideButtonIcon_Click);
+            this.SlideButtonIcon.Dock = System.Windows.Forms.DockStyle.Top;
+            this.SlideButtonIcon.Image = global::Community2._0.Properties.Resources.ic_keyboard_arrow_right_48px_128;
+            this.SlideButtonIcon.Location = new System.Drawing.Point(0, 0);
+            this.SlideButtonIcon.Name = "SlideButtonIcon";
+            this.SlideButtonIcon.Size = new System.Drawing.Size(35, 25);
+            this.SlideButtonIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.SlideButtonIcon.TabIndex = 13;
+            this.SlideButtonIcon.TabStop = false;
+            this.SlideButtonIcon.Click += new System.EventHandler(this.slideButtonIcon_Click);
+            this.SlideButtonIcon.MouseEnter += new System.EventHandler(this.SlideButtonIcon_MouseEnter);
+            this.SlideButtonIcon.MouseLeave += new System.EventHandler(this.SlideButtonIcon_MouseLeave);
             // 
             // HomePage
             // 
@@ -408,6 +418,7 @@
             this.SettingsPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.SlideButton)).EndInit();
             this.HomePanel.ResumeLayout(false);
             this.IconPanel.ResumeLayout(false);
             this.IconPanel.PerformLayout();
@@ -416,6 +427,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.PostIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SearchIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.HomeIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SlideButtonIcon)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -435,9 +447,7 @@
         private System.Windows.Forms.Button SearchButton;
         private System.Windows.Forms.Panel PagePanel;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button SlideButton;
         internal System.Windows.Forms.Panel IconPanel;
-        private System.Windows.Forms.Button slideButtonIcon;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -446,5 +456,7 @@
         private System.Windows.Forms.PictureBox PostIcon;
         private System.Windows.Forms.PictureBox SearchIcon;
         private System.Windows.Forms.PictureBox HomeIcon;
+        private System.Windows.Forms.PictureBox SlideButton;
+        private System.Windows.Forms.PictureBox SlideButtonIcon;
     }
 }

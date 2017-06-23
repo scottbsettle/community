@@ -16,7 +16,7 @@ namespace Community2._0
         private HomePanel   m_home   = new HomePanel();
         private SearchPanel m_Search = new SearchPanel();
         private PostPanel   m_Post   = new PostPanel();
-        private Point offset    = new Point();
+        private Point       offset   = new Point();
         private new bool MouseDown;
         public HomePage()
         {
@@ -74,6 +74,8 @@ namespace Community2._0
             PagePanel.Controls.Add(m_Post);
         }
         #endregion
+        // Hide and show Menues 
+        #region MenuHide
         private void SlideButton_Click(object sender, EventArgs e)
         {
             SettingsPanel.Visible = false;
@@ -85,7 +87,7 @@ namespace Community2._0
             SettingsPanel.Visible = true;
             IconPanel.Visible = false;
         }
-
+        #endregion
         // Moving the main frame when Mouse is down on top menue panel 
         #region MoveFrame
         private void TopMenuPanel_MouseDown(object sender, MouseEventArgs e)
@@ -109,6 +111,78 @@ namespace Community2._0
         private void TopMenuPanel_MouseUp(object sender, MouseEventArgs e)
         {
             MouseDown = false;
+        }
+        #endregion
+        // When mouse goes over icon change color then change back when leaves
+        #region IConColorChange
+        private void SlideButton_MouseEnter(object sender, EventArgs e)
+        {
+            SlideButton.BackColor = Color.LightSteelBlue;
+        }
+
+        private void SlideButton_MouseLeave(object sender, EventArgs e)
+        {
+            SlideButton.BackColor = Color.Transparent;
+        }
+
+        private void SlideButtonIcon_MouseEnter(object sender, EventArgs e)
+        {
+            SlideButtonIcon.BackColor = Color.LightSteelBlue;
+        }
+
+        private void HomeIcon_MouseEnter(object sender, EventArgs e)
+        {
+            HomeIcon.BackColor = Color.LightSteelBlue;
+        }
+
+        private void SearchIcon_MouseEnter(object sender, EventArgs e)
+        {
+            SearchIcon.BackColor = Color.LightSteelBlue;
+        }
+
+        private void PostIcon_MouseEnter(object sender, EventArgs e)
+        {
+            PostIcon.BackColor = Color.LightSteelBlue;
+        }
+
+        private void ProfileIcon_MouseEnter(object sender, EventArgs e)
+        {
+            ProfileIcon.BackColor =  Color.LightSteelBlue;
+        }
+
+        private void SettingsIcon_MouseEnter(object sender, EventArgs e)
+        {
+            SettingsIcon.BackColor = Color.LightSteelBlue;
+        }
+
+        private void SettingsIcon_MouseLeave(object sender, EventArgs e)
+        {
+            SettingsIcon.BackColor = Color.Transparent;
+        }
+
+        private void ProfileIcon_MouseLeave(object sender, EventArgs e)
+        {
+            ProfileIcon.BackColor = Color.Transparent;
+        }
+
+        private void PostIcon_MouseLeave(object sender, EventArgs e)
+        {
+            PostIcon.BackColor = Color.Transparent;
+        }
+
+        private void SearchIcon_MouseLeave(object sender, EventArgs e)
+        {
+            SearchIcon.BackColor = Color.Transparent;
+        }
+
+        private void HomeIcon_MouseLeave(object sender, EventArgs e)
+        {
+            HomeIcon.BackColor = Color.Transparent;
+        }
+
+        private void SlideButtonIcon_MouseLeave(object sender, EventArgs e)
+        {
+            SlideButtonIcon.BackColor = Color.Transparent;
         }
         #endregion
     }
