@@ -117,47 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="ic_keyboard_arrow_left_48px-128" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_keyboard_arrow_left_48px-128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ButtonTest" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ButtonTest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="8990-200" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\8990-200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="plain-green-gradient-ipad-909739" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\plain-green-gradient-ipad-909739.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fundo-azul-escuro-abstrato (6)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fundo-azul-escuro-abstrato (6).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="149452" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\149452.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="jPj13Lo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\jPj13Lo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="settings-128" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\settings-128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Image0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Image0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="65838-200" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\65838-200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="home-128" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\home-128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Community" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Community.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="search-2-xxl" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\search-2-xxl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_keyboard_arrow_right_48px-128" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_keyboard_arrow_right_48px-128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>

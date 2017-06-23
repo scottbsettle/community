@@ -16,5 +16,17 @@ namespace Community2._0
         {
             InitializeComponent();
         }
+
+        private void SlideButtonIcon_Click(object sender, EventArgs e)
+        {
+            CatPanel.Visible = true;
+           SlidePanel.Visible = false;
+        }
+
+        private void SlideButton_Click(object sender, EventArgs e)
+        {
+            CatPanel.Visible = false;
+            SlidePanel.Visible = true;
+        }
     }
 }

@@ -99,39 +99,55 @@
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(50, 20, 20, 20);
+            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(80, 20, 20, 20);
             this.flowLayoutPanel1.Size = new System.Drawing.Size(572, 335);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(53, 23);
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::Community2._0.Properties.Resources.ButtonTest;
+            this.pictureBox1.Image = global::Community2._0.Properties.Resources._149452;
+            this.pictureBox1.Location = new System.Drawing.Point(83, 23);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(233, 147);
+            this.pictureBox1.Size = new System.Drawing.Size(196, 127);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(292, 23);
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.BackgroundImage = global::Community2._0.Properties.Resources.ButtonTest;
+            this.pictureBox2.Image = global::Community2._0.Properties.Resources._8990_200;
+            this.pictureBox2.Location = new System.Drawing.Point(285, 23);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(233, 147);
+            this.pictureBox2.Size = new System.Drawing.Size(196, 127);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(53, 176);
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.BackgroundImage = global::Community2._0.Properties.Resources.ButtonTest;
+            this.pictureBox3.Image = global::Community2._0.Properties.Resources.search_2_xxl;
+            this.pictureBox3.Location = new System.Drawing.Point(83, 156);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(233, 142);
+            this.pictureBox3.Size = new System.Drawing.Size(196, 127);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Location = new System.Drawing.Point(292, 176);
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.BackgroundImage = global::Community2._0.Properties.Resources.ButtonTest;
+            this.pictureBox4.Image = global::Community2._0.Properties.Resources.settings_128;
+            this.pictureBox4.Location = new System.Drawing.Point(285, 156);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(233, 142);
+            this.pictureBox4.Size = new System.Drawing.Size(196, 127);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 3;
             this.pictureBox4.TabStop = false;
             // 

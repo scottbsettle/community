@@ -54,6 +54,12 @@
     <Compile Include="HomePage.Designer.cs">
       <DependentUpon>HomePage.cs</DependentUpon>
     </Compile>
+    <Compile Include="NextBottomPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NextBottomPanel.Designer.cs">
+      <DependentUpon>NextBottomPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Panels\HomePanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -124,6 +130,9 @@
     <EmbeddedResource Include="HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NextBottomPanel.resx">
+      <DependentUpon>NextBottomPanel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Panels\HomePanel.resx">
       <DependentUpon>HomePanel.cs</DependentUpon>
     </EmbeddedResource>
@@ -192,6 +201,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\jPj13Lo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\65838-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\149452.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plain-green-gradient-ipad-909739.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundo-azul-escuro-abstrato %286%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonTest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_keyboard_arrow_left_48px-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_keyboard_arrow_right_48px-128.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

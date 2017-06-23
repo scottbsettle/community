@@ -29,9 +29,14 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.SlidePanel = new System.Windows.Forms.Panel();
+            this.SlideButtonIcon = new System.Windows.Forms.PictureBox();
+            this.CatPanel = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
@@ -44,30 +49,78 @@
             this.button10 = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.SlideButton = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.SlidePanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SlideButtonIcon)).BeginInit();
+            this.CatPanel.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SlideButton)).BeginInit();
+            this.panel3.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.panel9.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.SlidePanel);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Padding = new System.Windows.Forms.Padding(85, 20, 0, 0);
-            this.panel1.Size = new System.Drawing.Size(441, 56);
+            this.panel1.Size = new System.Drawing.Size(441, 81);
             this.panel1.TabIndex = 8;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.panel7);
+            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Padding = new System.Windows.Forms.Padding(80, 25, 0, 0);
+            this.panel2.Size = new System.Drawing.Size(359, 81);
+            this.panel2.TabIndex = 3;
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.button1);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel7.Location = new System.Drawing.Point(205, 48);
+            this.panel7.Name = "panel7";
+            this.panel7.Padding = new System.Windows.Forms.Padding(30, 3, 30, 5);
+            this.panel7.Size = new System.Drawing.Size(154, 33);
+            this.panel7.TabIndex = 2;
+            // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSteelBlue;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(30, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(94, 25);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Create";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // textBox1
             // 
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.textBox1.Location = new System.Drawing.Point(210, 20);
+            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox1.Location = new System.Drawing.Point(205, 25);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(161, 20);
+            this.textBox1.Size = new System.Drawing.Size(154, 20);
             this.textBox1.TabIndex = 0;
             // 
             // label1
@@ -75,21 +128,45 @@
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Left;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(85, 20);
+            this.label1.Location = new System.Drawing.Point(80, 25);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(125, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Create Category";
             // 
-            // panel3
+            // SlidePanel
             // 
-            this.panel3.Controls.Add(this.panel4);
-            this.panel3.Controls.Add(this.panel6);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(441, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(131, 412);
-            this.panel3.TabIndex = 7;
+            this.SlidePanel.Controls.Add(this.panel3);
+            this.SlidePanel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.SlidePanel.Location = new System.Drawing.Point(359, 0);
+            this.SlidePanel.Name = "SlidePanel";
+            this.SlidePanel.Padding = new System.Windows.Forms.Padding(0, 0, 0, 55);
+            this.SlidePanel.Size = new System.Drawing.Size(82, 81);
+            this.SlidePanel.TabIndex = 4;
+            // 
+            // SlideButtonIcon
+            // 
+            this.SlideButtonIcon.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.SlideButtonIcon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SlideButtonIcon.Image = global::Community2._0.Properties.Resources.ic_keyboard_arrow_left_48px_128;
+            this.SlideButtonIcon.Location = new System.Drawing.Point(0, 0);
+            this.SlideButtonIcon.Name = "SlideButtonIcon";
+            this.SlideButtonIcon.Size = new System.Drawing.Size(22, 26);
+            this.SlideButtonIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.SlideButtonIcon.TabIndex = 0;
+            this.SlideButtonIcon.TabStop = false;
+            this.SlideButtonIcon.Click += new System.EventHandler(this.SlideButtonIcon_Click);
+            // 
+            // CatPanel
+            // 
+            this.CatPanel.Controls.Add(this.panel4);
+            this.CatPanel.Controls.Add(this.panel6);
+            this.CatPanel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.CatPanel.Location = new System.Drawing.Point(441, 0);
+            this.CatPanel.Name = "CatPanel";
+            this.CatPanel.Size = new System.Drawing.Size(131, 412);
+            this.CatPanel.TabIndex = 7;
+            this.CatPanel.Visible = false;
             // 
             // panel4
             // 
@@ -255,6 +332,7 @@
             // 
             this.panel6.BackColor = System.Drawing.Color.Transparent;
             this.panel6.Controls.Add(this.label2);
+            this.panel6.Controls.Add(this.SlideButton);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel6.Location = new System.Drawing.Point(0, 0);
             this.panel6.Name = "panel6";
@@ -267,12 +345,64 @@
             this.label2.Dock = System.Windows.Forms.DockStyle.Left;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Location = new System.Drawing.Point(30, 0);
             this.label2.Name = "label2";
-            this.label2.Padding = new System.Windows.Forms.Padding(20, 3, 0, 0);
-            this.label2.Size = new System.Drawing.Size(111, 18);
+            this.label2.Padding = new System.Windows.Forms.Padding(5, 3, 0, 0);
+            this.label2.Size = new System.Drawing.Size(96, 18);
             this.label2.TabIndex = 2;
             this.label2.Text = "Select Category";
+            // 
+            // SlideButton
+            // 
+            this.SlideButton.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.SlideButton.Dock = System.Windows.Forms.DockStyle.Left;
+            this.SlideButton.Image = global::Community2._0.Properties.Resources.ic_keyboard_arrow_right_48px_128;
+            this.SlideButton.Location = new System.Drawing.Point(0, 0);
+            this.SlideButton.Name = "SlideButton";
+            this.SlideButton.Size = new System.Drawing.Size(30, 25);
+            this.SlideButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.SlideButton.TabIndex = 3;
+            this.SlideButton.TabStop = false;
+            this.SlideButton.Click += new System.EventHandler(this.SlideButton_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label3.Location = new System.Drawing.Point(0, 5);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(57, 13);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Categories";
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.panel8);
+            this.panel3.Controls.Add(this.panel9);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(82, 26);
+            this.panel3.TabIndex = 9;
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.SlideButtonIcon);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel8.Location = new System.Drawing.Point(60, 0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(22, 26);
+            this.panel8.TabIndex = 0;
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.label3);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel9.Location = new System.Drawing.Point(0, 0);
+            this.panel9.Name = "panel9";
+            this.panel9.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.panel9.Size = new System.Drawing.Size(60, 26);
+            this.panel9.TabIndex = 1;
             // 
             // PostCatPanel
             // 
@@ -280,16 +410,25 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.CatPanel);
             this.Name = "PostCatPanel";
             this.Size = new System.Drawing.Size(572, 412);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel3.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.SlidePanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.SlideButtonIcon)).EndInit();
+            this.CatPanel.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SlideButton)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -299,7 +438,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel CatPanel;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.VScrollBar vScrollBar1;
@@ -312,5 +451,15 @@
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel SlidePanel;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox SlideButtonIcon;
+        private System.Windows.Forms.PictureBox SlideButton;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel9;
     }
 }

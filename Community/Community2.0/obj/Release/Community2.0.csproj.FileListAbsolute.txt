@@ -16,3 +16,5 @@ C:\Users\God\Desktop\community\Community\Community2.0\obj\Release\Community2._0.
 C:\Users\God\Desktop\community\Community\Community2.0\obj\Release\Community2.0.csproj.GenerateResource.Cache
 C:\Users\God\Desktop\community\Community\Community2.0\obj\Release\Community2.0.exe
 C:\Users\God\Desktop\community\Community\Community2.0\obj\Release\Community2.0.pdb
+C:\Users\God\Desktop\community\Community\Community2.0\obj\Release\Community2.0.csprojResolveAssemblyReference.cache
+C:\Users\God\Desktop\community\Community\Community2.0\obj\Release\Community2._0.NextBottomPanel.resources
